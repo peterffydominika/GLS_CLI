@@ -21,5 +21,13 @@ namespace GLS_CLI {
             KezbesitettCsomagokSzama = int.Parse(temp[3]);
             NapiFogyasztas = int.Parse(temp[4]);
         }
+        public void Modosito(AutoAdatok mireModositjuk)
+        {
+            Datum = mireModositjuk.Datum;
+            SoforNev = mireModositjuk.SoforNev;
+            NapiKilometer = mireModositjuk.NapiKilometer;
+            KezbesitettCsomagokSzama = mireModositjuk.KezbesitettCsomagokSzama;
+            NapiFogyasztas = mireModositjuk.NapiFogyasztas;
+        }
     }
 }

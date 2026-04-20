@@ -12,7 +12,7 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dtgAdatok" ColumnWidth="Auto" Grid.Column="0"/>
+        <DataGrid x:Name="dtgAdatok" ColumnWidth="Auto" Grid.Column="0" SelectionChanged="dtgAdatok_SelectionChanged"/>
 
         <StackPanel Grid.Column="1" Margin="10">
             <Label Content="Dátum" FontWeight="Bold"/>
